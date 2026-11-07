@@ -1,0 +1,38 @@
+.expertise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1ps dotted brown;
+    background-color: antiquewhite
+}
+.expertisehead{
+    color: blue;
+}
+.expertin::before{
+    content: '⭐';
+}
+.expertin::after{
+    content: '⭐';
+}
+.expertin::first-letter{
+    color: red;
+}
+
+/* image */
+
+.imageDiv{
+    
+    background-color: red;
+}
+.robotimg{
+    width: 45vw;
+    border-radius: 20px;
+}
+@media (max-width:900px){
+    .expertise{
+        flex-direction: column;
+    }
+    .robotimg{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,66 @@
+.home{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.videoDiv{
+    width:33vw;
+    margin: 5px;
+     border: 2px solid white;
+    border-radius: 5px;
+}
+.video{
+   width:33vw;
+   height: 40vh;
+   object-fit: cover;
+   border-radius: 10px;
+   
+   
+
+}
+.goalDiv{
+    width: 30vw;
+    color:white;
+    padding: 5px;
+    background-color:rgb(211, 116, 195);
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.missionDiv{
+    
+    width: 30vw;
+    color:white;
+    padding: 5px;
+    background-color:rgb(109, 109, 159);
+    margin: 5px;
+    border: 1px  solid brown;
+    border-radius: 10px;
+}
+.goalhead,.missionhead{
+    color:greenyellow;
+     font-weight: 600;
+}
+.para{
+    font-weight: 600;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5px;
+}
+@media (max-width:900px){
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
+    .goalDiv,.videoDiv,.missionDiv{
+        width:90vw;
+        padding: 5px;
+        
+    }
+    .video{
+        width:100%;
+        height: auto;
+        aspect-ratio: 16/9;
+
+    }
+
+}

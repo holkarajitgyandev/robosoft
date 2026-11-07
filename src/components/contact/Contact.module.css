@@ -1,0 +1,117 @@
+
+
+.contact {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  padding-top: 0;
+  background: #f4f6fb;
+}
+
+/* Left info section */
+.contactcell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.rslogo {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+.contactcell p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* Form wrapper */
+.formDiv {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow:0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactform div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  border-color: #4f4f98;
+  box-shadow: 0 0 0 2px rgba(79, 79, 152, 0.2);
+}
+
+/* Submit button */
+.submitbtn {
+  margin-top: 10px;
+  padding: 12px;
+  background: #4f4f98;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+.submitbtn:hover {
+  background: #3f3f7a;
+  transform: translateY(-1px);
+}
+
+.submitbtn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contactcell,
+  .formDiv {
+    width: 100%;
+    max-width: 100%;
+  }
+}

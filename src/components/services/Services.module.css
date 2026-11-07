@@ -1,0 +1,55 @@
+.services{
+    border: 1px solid yellow;
+    background-color: rgb(182, 202, 162);
+    display: flex;
+    
+    align-items:center;
+    justify-content: space-around;
+}
+
+.imagediv{
+    
+    
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.robotimg{
+    width:45vw;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: brown;
+    
+}
+
+.serviceDiv{
+    display: flex;
+    flex-direction: column;
+}
+.serviceshead{
+    color: blueviolet;
+}
+.service{
+    color:blue;
+}
+.service::before{
+    content: '👉';
+}
+
+.serviceDiv:first-child{
+    color: blue;
+}
+.service:nth-child(even){
+    color:brown;
+}
+@media(max-width:900px){
+    .services{
+        flex-direction: column;
+    }
+    .robotimg{
+        width: 90vw;
+    }
+}

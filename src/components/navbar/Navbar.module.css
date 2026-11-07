@@ -1,0 +1,206 @@
+.navigation{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    
+    background-color:bisque; 
+
+}
+
+
+
+.rslogo{
+    display: block;
+    width:8vw;
+    height:6vw ;
+    filter:saturate(1.4)
+}
+ul{
+    margin: 0;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 30px;
+    font-weight: 600;
+    font-size: large;
+}
+.list li{
+    position: relative;
+border: 3px solid transparent; /* reserve border space */
+  padding: 6px 12px;                  /* same padding as hover */
+  transition: all 0.2s ease; 
+  font-size: large;
+}
+.list li:hover{
+    color: rgb(79, 79, 152);
+    cursor: pointer;
+    
+    border: 3px solid brown;
+    border-radius: 10px;
+     padding:6px 12px ;
+}
+.buttons{
+    gap: 5px;
+}
+.services{
+    position: relative;
+    
+}
+
+.dropdown,.dropdown2{
+    display: none;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    border-radius: 10px;
+
+    
+    background-color: white;
+    list-style: none;
+    
+    position:absolute;
+    top:100%;
+    
+    z-index: 100;
+}
+.list .services:hover .dropdown{
+   display:flex;
+}
+.dropdown li{
+    width: 100%;
+    background-color: aqua;
+}
+.dropdown li:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+
+.list .expertise:hover .dropdown2{
+   display:flex;
+}
+.dropdown2 li{
+    width: 100%;
+    background-color:aqua;
+    font-weight: 600;
+}
+.dropdown2 li:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+/* login and signup */
+.buttons{
+    display:  flex;
+    gap: 10px;
+}
+.buttons button{
+    background-color: blue;
+    color: white;
+    padding:7px 17px;
+    font-size: large;
+    border-radius: 20px;
+    
+}
+
+.buttons .signup{
+    background-color: brown;  
+}
+
+.buttons .signup:hover{
+    background-color: chartreuse;
+    color: black;
+}
+
+.buttons .login:hover{
+    background-color:cyan;
+    color: black;
+}
+/* responsive */
+@media (max-width:900px){
+   .list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap:10px;
+    font-weight: 600;
+    font-size:medium; 
+}
+.buttons button{
+    font-size: medium;
+}
+}
+
+
+/* Link css */
+.list .link{
+    
+  text-decoration:none;
+  color: inherit;
+
+
+}
+.buttons .link{
+    text-decoration: none;
+    color: inherit;
+}
+/* hamburg menu */
+.icon{
+   display: none; 
+}
+
+
+
+
+ @media (max-width:680px){
+   .list{
+    display: none;
+    
+}
+.rslogo:hover{
+    width:100vw;
+    height: 100vw;
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+    
+}
+.navigation{
+    position: relative;
+}
+.show{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    background-color: antiquewhite;
+    position: absolute;
+    top:100%;
+    
+    z-index: 100;
+}
+.icon{
+    display: block;
+
+    
+    
+}
+.buttons button{
+    font-size:small;
+    padding: 5px 10px;
+}
+ }
+
+ 

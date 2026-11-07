@@ -1,0 +1,26 @@
+.header{
+    background-color: rgb(168, 211, 196);
+    display: flex;
+    justify-content: space-around;
+}
+.companyName{
+    color: red;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+
+}
+.companyName:hover{
+    color: green;
+    
+    
+}
+
+.rslogo{
+  width: 10rem;
+  height: 10rem;
+  padding-top: 5px;
+  border-radius: 50%;
+}
